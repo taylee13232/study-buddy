@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FBF7F3">
+    <meta name="description" content="Turn your class notes into a more thoughtful study routine with Study Buddy.">
+    <title>Study Buddy — Your study space</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Study Buddy home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>study buddy</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#study-tools">Study tools</a>
+        <a class="nav-link" href="sample-study-guide.html">Sample guide</a>
+      </nav>
+      <a class="header-button" href="#study-material">Get started <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="home">
+      <section class="hero page-width" aria-labelledby="welcome-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR PERSONAL STUDY SPACE</div>
+          <h1 id="welcome-title">Make study time<br>feel <span>more like you.</span></h1>
+          <p>Bring your class notes. Find a new way to learn them. Your next study session starts here.</p>
+          <a class="primary-button" href="#study-material">Set up your study space <span aria-hidden="true">→</span></a>
+          <div class="hero-note"><span class="sparkle" aria-hidden="true">✳</span> A little progress adds up.</div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-card art-card-back">
+            <span class="art-mini-icon">✎</span>
+            <span>little steps, big ideas</span>
+          </div>
+          <div class="art-card art-card-front">
+            <span class="art-book">✦</span>
+            <span class="art-label">TODAY'S FOCUS</span>
+            <strong>Learn it<br>your way.</strong>
+            <span class="art-progress"><i></i></span>
+            <span class="art-progress-caption">One topic at a time</span>
+          </div>
+          <span class="float-star star-one">✦</span>
+          <span class="float-star star-two">✳</span>
+          <span class="float-dot"></span>
+        </div>
+      </section>
+
+      <section class="workspace page-width" id="study-material" aria-labelledby="material-title">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">FIRST THINGS FIRST</div>
+            <h2 id="material-title">Bring your study material</h2>
+          </div>
+          <span class="step-label"><span>01</span> YOUR STUDY SPACE</span>
+        </div>
+        <div class="material-card">
+          <div class="material-intro">
+            <span class="material-icon" aria-hidden="true">▤</span>
+            <div>
+              <h3>Start with what you're learning</h3>
+              <p>Add a study guide or paste notes. You can use the same material across your study tools.</p>
+            </div>
+          </div>
+          <div class="material-actions">
+            <label class="upload-button" for="guide-file"><span aria-hidden="true">↑</span> Upload a guide</label>
+            <input id="guide-file" class="visually-hidden" type="file" accept=".pdf,.doc,.docx,.txt,.html,text/plain,text/html,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            <button class="secondary-button" id="open-notes" type="button"><span aria-hidden="true">＋</span> Paste notes</button>
+          </div>
+          <div class="material-status" id="material-status" aria-live="polite">
+            <span class="status-dot"></span>
+            <span id="material-name">No study material added yet</span>
+            <button class="clear-button" id="clear-material" type="button" hidden>Remove</button>
+          </div>
+          <p class="privacy-note"><span aria-hidden="true">♧</span> Your notes stay in this browser in this starter version.</p>
+        </div>
+      </section>
+
+      <section class="tools-section page-width" id="study-tools" aria-labelledby="tools-title">
+        <div class="section-heading tools-heading">
+          <div>
+            <div class="eyebrow">PICK YOUR PATH</div>
+            <h2 id="tools-title">Three ways to make it stick</h2>
+          </div>
+          <p>Switch up your study session whenever you need a fresh perspective.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card exam-card">
+            <div class="feature-topline"><span class="feature-icon" aria-hidden="true">✓</span><span class="feature-number">01 / PRACTICE</span></div>
+            <h3>Practice exams</h3>
+            <p>Get comfortable with the material through practice questions and thoughtful explanations.</p>
+            <button class="feature-link" type="button" data-feature="exams">Explore exams <span aria-hidden="true">→</span></button>
+            <div class="card-decoration exam-decoration" aria-hidden="true">A</div>
+          </article>
+          <article class="feature-card games-card">
+            <div class="feature-topline"><span class="feature-icon" aria-hidden="true">✳</span><span class="feature-number">02 / PLAY</span></div>
+            <h3>Learning games</h3>
+            <p>Make connections with matching, quick trivia, and fill-in-the-blank challenges.</p>
+            <button class="feature-link" type="button" data-feature="games">Explore games <span aria-hidden="true">→</span></button>
+            <div class="card-decoration games-decoration" aria-hidden="true">✦</div>
+          </article>
+          <article class="feature-card tutor-card">
+            <div class="feature-topline"><span class="feature-icon" aria-hidden="true">♡</span><span class="feature-number">03 / UNDERSTAND</span></div>
+            <h3>AI tutoring</h3>
+            <p>Ask questions, get clear explanations, and work through tricky ideas at your pace.</p>
+            <button class="feature-link" type="button" data-feature="tutor">Explore tutoring <span aria-hidden="true">→</span></button>
+            <div class="card-decoration tutor-decoration" aria-hidden="true">?</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sample-callout page-width" aria-label="Sample study guide">
+        <div class="sample-icon" aria-hidden="true">⌘</div>
+        <div>
+          <span class="eyebrow">WANT TO TAKE A LOOK?</span>
+          <h2>Explore the sample HTML study guide</h2>
+          <p>Review the HTML-1 through HTML-3 concepts used for this college assignment.</p>
+        </div>
+        <a class="secondary-button sample-link" href="sample-study-guide.html">Open sample guide <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✦</span><span>study buddy</span></a>
+      <p>A calmer way to study, one session at a time.</p>
+    </footer>
+
+    <dialog class="notes-dialog" id="notes-dialog" aria-labelledby="notes-title">
+      <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close">×</button></form>
+      <div class="eyebrow">YOUR STUDY MATERIAL</div>
+      <h2 id="notes-title">Paste your class notes</h2>
+      <p>Your notes are saved in this browser and stay available while you explore the page.</p>
+      <label class="visually-hidden" for="notes-input">Class notes</label>
+      <textarea id="notes-input" rows="8" placeholder="Paste your notes or study guide text here..."></textarea>
+      <div class="dialog-actions">
+        <button class="secondary-button" id="cancel-notes" type="button">Cancel</button>
+        <button class="upload-button" id="save-notes" type="button">Save notes <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="form-message" id="notes-message" role="status"></p>
+    </dialog>
+
+    <dialog class="feature-dialog" id="feature-dialog" aria-labelledby="feature-dialog-title">
+      <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close">×</button></form>
+      <div class="eyebrow">STUDY TOOL PREVIEW</div>
+      <h2 id="feature-dialog-title">Coming up next</h2>
+      <p id="feature-dialog-description"></p>
+      <p class="feature-dialog-note">This first version sets up the Study Buddy dashboard. Interactive learning activities and secure AI connections can be added in the next phase.</p>
+      <button class="upload-button" id="close-feature" type="button">Got it</button>
+    </dialog>
+  </body>
+</html>

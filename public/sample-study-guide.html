@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A sample study guide covering introductory HTML-1 through HTML-3 concepts.">
+    <title>Sample Study Guide: HTML-1 through HTML-3 — Study Buddy</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="guide-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Study Buddy home">
+        <span class="brand-mark" aria-hidden="true">✦</span><span>study buddy</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="sample-study-guide.html">Sample guide</a>
+      </nav>
+      <a class="header-button" href="index.html#study-material">Back to dashboard <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="guide-content">
+      <a class="guide-back" href="index.html">← Back to Study Buddy</a>
+      <div class="eyebrow">SAMPLE COLLEGE STUDY GUIDE</div>
+      <h1>HTML foundations:<br><span>HTML-1 through HTML-3</span></h1>
+      <p class="guide-lead">A quick review of the building blocks of web pages: document structure, text and links, and organized information.</p>
+      <div class="guide-meta"><span>WEB DEVELOPMENT</span><span>3 TOPICS</span><span>ABOUT 10 MIN</span></div>
+
+      <article class="guide-topic">
+        <div class="topic-number">HTML-1</div>
+        <div>
+          <h2>Document structure and elements</h2>
+          <p>HTML (HyperText Markup Language) describes the meaning and structure of content on a web page. Elements are written with tags and may contain text or other elements.</p>
+          <h3>A basic document</h3>
+          <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, web!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <ul>
+            <li><code>&lt;!doctype html&gt;</code> tells the browser to use modern HTML.</li>
+            <li><code>&lt;head&gt;</code> contains page information; <code>&lt;body&gt;</code> contains visible page content.</li>
+            <li>Headings express a hierarchy: use <code>&lt;h1&gt;</code> for the main heading, then <code>&lt;h2&gt;</code> for a subsection.</li>
+            <li>Most elements have an opening tag and a closing tag. Void elements, such as <code>&lt;meta&gt;</code> and <code>&lt;img&gt;</code>, do not wrap content.</li>
+          </ul>
+          <div class="key-idea"><strong>Remember:</strong> HTML provides structure and meaning; CSS controls presentation, and JavaScript adds behavior.</div>
+        </div>
+      </article>
+
+      <article class="guide-topic">
+        <div class="topic-number">HTML-2</div>
+        <div>
+          <h2>Text, links, images, and lists</h2>
+          <p>Use elements that describe their content. This helps people and browsers understand how parts of a page relate to each other.</p>
+          <pre><code>&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;p&gt;Visit the &lt;a href="https://example.com"&gt;course site&lt;/a&gt;.&lt;/p&gt;
+&lt;img src="diagram.png" alt="A labeled diagram of a web page"&gt;
+&lt;ul&gt;
+  &lt;li&gt;Read the lesson&lt;/li&gt;
+  &lt;li&gt;Try the examples&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <ul>
+            <li>Links use the <code>&lt;a&gt;</code> element and an <code>href</code> attribute to specify the destination.</li>
+            <li>Images use <code>&lt;img&gt;</code>. Write useful <code>alt</code> text describing the image's purpose; use empty alt text only when an image is decorative.</li>
+            <li><code>&lt;ul&gt;</code> creates an unordered list; <code>&lt;ol&gt;</code> creates an ordered list. Each list item belongs in an <code>&lt;li&gt;</code>.</li>
+            <li>Attributes provide extra information in an opening tag. Their values are usually placed inside quotation marks.</li>
+          </ul>
+          <div class="key-idea"><strong>Check yourself:</strong> If a link's destination changes, update its <code>href</code>. If an image conveys information, make sure its alt text communicates that information too.</div>
+        </div>
+      </article>
+
+      <article class="guide-topic">
+        <div class="topic-number">HTML-3</div>
+        <div>
+          <h2>Semantic sections, tables, and forms</h2>
+          <p>Semantic elements communicate a section's role. Use tables for genuinely tabular data and forms to collect user input.</p>
+          <h3>Page regions and a small data table</h3>
+          <pre><code>&lt;header&gt;Course title&lt;/header&gt;
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Weekly topics&lt;/h2&gt;
+    &lt;table&gt;
+      &lt;caption&gt;Study schedule&lt;/caption&gt;
+      &lt;tr&gt;&lt;th&gt;Week&lt;/th&gt;&lt;th&gt;Topic&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;Course materials&lt;/footer&gt;</code></pre>
+          <ul>
+            <li><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> describe page regions. A page should have one main content area.</li>
+            <li>Tables organize data into rows and cells. Use <code>&lt;th&gt;</code> for header cells and <code>&lt;td&gt;</code> for data cells; do not use tables just to arrange a layout.</li>
+            <li>Forms collect input. Pair a <code>&lt;label&gt;</code> with a control using matching <code>for</code> and <code>id</code> values.</li>
+          </ul>
+          <h3>A labeled form control</h3>
+          <pre><code>&lt;label for="topic"&gt;Topic to review&lt;/label&gt;
+&lt;input id="topic" name="topic" type="text"&gt;</code></pre>
+          <div class="key-idea"><strong>Accessibility tip:</strong> Semantic structure and explicit labels make a page easier to navigate with assistive technology and other browsing tools.</div>
+        </div>
+      </article>
+
+      <section class="review-box" aria-labelledby="review-title">
+        <div class="eyebrow">QUICK SELF-CHECK</div>
+        <h2 id="review-title">Can you explain it without looking?</h2>
+        <ol>
+          <li>What belongs in the <code>&lt;head&gt;</code> and what belongs in the <code>&lt;body&gt;</code>?</li>
+          <li>How is an ordered list different from an unordered list?</li>
+          <li>Why should an image have appropriate alt text?</li>
+          <li>When should you use a table, and what is the purpose of a form label?</li>
+        </ol>
+        <p><strong>Suggested answers:</strong> The head holds document metadata and linked resources; the body holds page content. Ordered lists imply a sequence while unordered lists do not. Alt text communicates an informative image's meaning to people who cannot see it. Tables are for tabular data, and labels identify their form controls.</p>
+      </section>
+      <a class="guide-home-button" href="index.html#study-material">Use this guide in Study Buddy <span aria-hidden="true">→</span></a>
+    </main>
+    <footer class="site-footer guide-footer page-width">
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>study buddy</span></a>
+      <p>Sample guide for HTML-1 through HTML-3.</p>
+    </footer>
+  </body>
+</html>
